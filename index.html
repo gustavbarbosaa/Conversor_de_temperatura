@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 id="principal-title">Temperature<span>converter</span>!</h2>
+        <nav id="menu-bar">
+            <a href="https://www.instagram.com/gustavbarbosaa/" target="_blanck">Instagram</a>
+            <a href="https://github.com/gustavbarbosaa" target="_blanck">GitHub</a>
+            <a href="https://www.linkedin.com/in/gustavo-ara%C3%BAjo-a3a723219/" target="_blanck">Linkedin</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Selecione a medida de temperatura!</h2>
+        <section class="principal-content">
+            <section class="first-entry">
+                <select name="current-measurement" id="primary-measurement">
+                    <option value="celsius">Celsius (C)</option>
+                    <option value="fahrenheit">Fahrenheit (F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </section>
+            <p>Para</p>
+                <select name="desired-measure" id="desired-measure">
+                    <option value="celsius">Celsius (C)</option>
+                    <option value="fahrenheit">Fahrenheit (F)</option>
+                    <option value="kelvin">Kelvin (K)</option>
+                </select>
+            </section>
+            <input type="number" name="temperature" id="temperature">
+            <input type="button" value="Converter" onclick="toConvert()" id="button">
+        <section class="result">
+            <p id="res">
+                
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <strong>Gustavo Henrique</strong>!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
